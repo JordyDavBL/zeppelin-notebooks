@@ -1,0 +1,339 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\r\nJordy Betancourth L.\r\nProgramación Avanzada\r\nParalelo A",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-09 23:37:45.083",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003cp\u003eJordy Betancourth L.\u003cbr /\u003e\nProgramación Avanzada\u003cbr /\u003e\nParalelo A\u003c/p\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781048020820_483197977",
+      "id": "paragraph_1781048020820_483197977",
+      "dateCreated": "2026-06-09 23:33:40.825",
+      "dateStarted": "2026-06-09 23:37:45.088",
+      "dateFinished": "2026-06-09 23:37:47.501",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n# Contar Palabras",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-09 23:37:56.699",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eContar Palabras\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781048265078_247423311",
+      "id": "paragraph_1781048265078_247423311",
+      "dateCreated": "2026-06-09 23:37:45.078",
+      "dateStarted": "2026-06-09 23:37:56.696",
+      "dateFinished": "2026-06-09 23:37:56.736",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n### Párrafo 1 — Cargar los datos (RDD \u003d colección distribuida)",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 00:06:46.052",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003ePárrafo 1 — Cargar los datos (RDD \u003d colección distribuida)\u003c/h3\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781049995536_48648487",
+      "id": "paragraph_1781049995536_48648487",
+      "dateCreated": "2026-06-10 00:06:35.536",
+      "dateStarted": "2026-06-10 00:06:46.053",
+      "dateFinished": "2026-06-10 00:06:46.070",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\nval ruta \u003d \"/workspaces/codespaces-blank/spark-3.5.1-bin-hadoop3/elquijote.txt\"  // \u003c-- AJUSTA esta ruta\nval lineas \u003d sc.textFile(ruta)\nprintln(s\"Líneas leídas: ${lineas.count()}\")   // count() es una ACCIÓN",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 00:04:24.257",
+      "progress": 100,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Líneas leídas: 37453\n\u001b[1m\u001b[34mruta\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m \u003d /workspaces/codespaces-blank/spark-3.5.1-bin-hadoop3/elquijote.txt\n\u001b[1m\u001b[34mlineas\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m \u003d /workspaces/codespaces-blank/spark-3.5.1-bin-hadoop3/elquijote.txt MapPartitionsRDD[47] at textFile at \u003cconsole\u003e:31\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://ca6d50e3-15ef-4fdc-a26e-8343b66eafad.internal.cloudapp.net:4040/jobs/job?id\u003d25"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781048276693_1864646008",
+      "id": "paragraph_1781048276693_1864646008",
+      "dateCreated": "2026-06-09 23:37:56.693",
+      "dateStarted": "2026-06-10 00:04:24.260",
+      "dateFinished": "2026-06-10 00:04:24.667",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n### Parrafo 2 — Transformaciones perezosas (Map + paralelismo de datos)",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 00:06:50.519",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003eParrafo 2 — Transformaciones perezosas (Map + paralelismo de datos)\u003c/h3\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781049937054_249378759",
+      "id": "paragraph_1781049937054_249378759",
+      "dateCreated": "2026-06-10 00:05:37.054",
+      "dateStarted": "2026-06-10 00:06:50.520",
+      "dateFinished": "2026-06-10 00:06:50.529",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\r\nval palabras \u003d lineas\r\n  .flatMap(linea \u003d\u003e linea.toLowerCase.split(\"[^\\\\p{L}]+\"))\r\n  .filter(_.nonEmpty)\r\n\r\nval paresPalabraUno \u003d palabras.map(p \u003d\u003e (p, 1))",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 00:06:01.803",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "tableHide": false,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mpalabras\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[String]\u001b[0m \u003d MapPartitionsRDD[52] at filter at \u003cconsole\u003e:31\n\u001b[1m\u001b[34mparesPalabraUno\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Int)]\u001b[0m \u003d MapPartitionsRDD[53] at map at \u003cconsole\u003e:33\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781048667761_26956894",
+      "id": "paragraph_1781048667761_26956894",
+      "dateCreated": "2026-06-09 23:44:27.761",
+      "dateStarted": "2026-06-10 00:06:01.805",
+      "dateFinished": "2026-06-10 00:06:02.035",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n### Párrafo 3 — Reduce (combinar conteos por clave)",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 00:07:07.215",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch3\u003ePárrafo 3 — Reduce (combinar conteos por clave)\u003c/h3\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781049930718_389861363",
+      "id": "paragraph_1781049930718_389861363",
+      "dateCreated": "2026-06-10 00:05:30.718",
+      "dateStarted": "2026-06-10 00:07:07.209",
+      "dateFinished": "2026-06-10 00:07:07.225",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 00:07:07.206",
+      "progress": 0,
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781050027206_1537985460",
+      "id": "paragraph_1781050027206_1537985460",
+      "dateCreated": "2026-06-10 00:07:07.206",
+      "status": "READY"
+    }
+  ],
+  "name": "taller-1",
+  "id": "2MTAWD2WQ",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.12.0",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {}
+}
