@@ -83,22 +83,831 @@
       "status": "FINISHED"
     },
     {
-      "text": "%md\n",
+      "text": "  val data \u003d spark.read\n    .option(\"header\", \"true\")\n    .option(\"delimiter\", \",\")\n    .option(\"quote\", \"\\\"\")\n    .option(\"inferSchema\", \"true\")\n    .csv(\"/workspaces/codespaces-blank/paa-aa26/organizations-1000.csv\")\n\ndata.show(10)",
       "user": "anonymous",
-      "dateUpdated": "2026-06-10 00:31:31.833",
-      "progress": 0,
-      "config": {},
+      "dateUpdated": "2026-06-10 00:58:25.181",
+      "progress": 100,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": false,
+        "results": {},
+        "enabled": true
+      },
       "settings": {
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-----+---------------+--------------------+--------------------+--------------------+--------------------+-------+--------------------+-------------------+\n|Index|Organization Id|                Name|             Website|             Country|         Description|Founded|            Industry|Number of employees|\n+-----+---------------+--------------------+--------------------+--------------------+--------------------+-------+--------------------+-------------------+\n|    1|E84A904909dF528|          Liu-Hoover|http://www.day-ha...|      Western Sahara|Ergonomic zero ad...|   1980|   Online Publishing|               6852|\n|    2|AAC4f9aBF86EAeF|       Orr-Armstrong|https://www.chapm...|             Algeria|Ergonomic radical...|   1970|     Import / Export|               7994|\n|    3|ad2eb3C8C24DB87|           Gill-Lamb|     http://lin.com/|       Cote d\u0027Ivoire|Programmable inte...|   2005|   Apparel / Fashion|               5105|\n|    4|D76BB12E5eE165B|         Bauer-Weiss|https://gillespie...|United States of ...|Synergistic maxim...|   2015|               Dairy|               9069|\n|    5|2F31EddF2Db9aAE|         Love-Palmer| https://kramer.com/|             Denmark|Optimized optimiz...|   2010|Management Consul...|               6991|\n|    6|6774DC1dB00BD11|Farmer, Edwards a...|http://wolfe-boyd...|      Norfolk Island|Virtual leadinged...|   2003|  Mental Health Care|               3503|\n|    7|116B5cD4eE1fAAc|Bass, Hester and ...|https://meza-smit...|          Uzbekistan|Multi-tiered syst...|   1994|   Computer Hardware|               2762|\n|    8|AB2eA15d98b6BD4|Strickland, Gray ...|   http://kerr.info/|              Israel|Team-oriented fre...|   1987|     Performing Arts|               7020|\n|    9|0c6D831e8DceCfE|Sparks, Decker an...|https://www.howe....|              Israel|Down-sized conten...|   1977|Marketing / Adver...|               2709|\n|   10|9ABE0c8aee135d6|Osborn, Ford and ...|http://www.mcdona...|Syrian Arab Republic|Optional coherent...|   1990|Investment Bankin...|               5731|\n+-----+---------------+--------------------+--------------------+--------------------+--------------------+-------+--------------------+-------------------+\nonly showing top 10 rows\n\n\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [Index: int, Organization Id: string ... 7 more fields]\n"
+          }
+        ]
+      },
       "apps": [],
-      "runtimeInfos": {},
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://ca6d50e3-15ef-4fdc-a26e-8343b66eafad.internal.cloudapp.net:4040/jobs/job?id\u003d37"
+            },
+            {
+              "jobUrl": "http://ca6d50e3-15ef-4fdc-a26e-8343b66eafad.internal.cloudapp.net:4040/jobs/job?id\u003d38"
+            },
+            {
+              "jobUrl": "http://ca6d50e3-15ef-4fdc-a26e-8343b66eafad.internal.cloudapp.net:4040/jobs/job?id\u003d39"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
       "progressUpdateIntervalMs": 500,
       "jobName": "paragraph_1781051491833_1887367235",
       "id": "paragraph_1781051491833_1887367235",
       "dateCreated": "2026-06-10 00:31:31.833",
-      "status": "READY"
+      "dateStarted": "2026-06-10 00:58:25.183",
+      "dateFinished": "2026-06-10 00:58:25.895",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\r\n## Imprimir el Esquema",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 00:59:17.339",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eImprimir el Esquema\u003c/h2\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053135330_1880116681",
+      "id": "paragraph_1781053135330_1880116681",
+      "dateCreated": "2026-06-10 00:58:55.330",
+      "dateStarted": "2026-06-10 00:59:17.339",
+      "dateFinished": "2026-06-10 00:59:17.353",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\n\ndata.printSchema()\n",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 00:58:37.677",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Index: integer (nullable \u003d true)\n |-- Organization Id: string (nullable \u003d true)\n |-- Name: string (nullable \u003d true)\n |-- Website: string (nullable \u003d true)\n |-- Country: string (nullable \u003d true)\n |-- Description: string (nullable \u003d true)\n |-- Founded: integer (nullable \u003d true)\n |-- Industry: string (nullable \u003d true)\n |-- Number of employees: integer (nullable \u003d true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781052652788_2086235752",
+      "id": "paragraph_1781052652788_2086235752",
+      "dateCreated": "2026-06-10 00:50:52.789",
+      "dateStarted": "2026-06-10 00:58:37.679",
+      "dateFinished": "2026-06-10 00:58:38.033",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n# Crear un Esquema Propio",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 00:59:37.388",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eCrear un Esquema Propio\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053161251_666048745",
+      "id": "paragraph_1781053161251_666048745",
+      "dateCreated": "2026-06-10 00:59:21.251",
+      "dateStarted": "2026-06-10 00:59:37.389",
+      "dateFinished": "2026-06-10 00:59:37.401",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\n\nimport org.apache.spark.sql.types._\n\nval esquema \u003d StructType(Array(\n  StructField(\"Index\", IntegerType, true),\n  StructField(\"Organization Id\", StringType, true),\n  StructField(\"Name\", StringType, true),\n  StructField(\"Website\", StringType, true),\n  StructField(\"Country\", StringType, true),\n  StructField(\"Description\", StringType, true),\n  StructField(\"Founded\", IntegerType, true),\n  StructField(\"Industry\", StringType, true),\n  StructField(\"Number of employees\", IntegerType, true)\n))",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 00:59:43.038",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.sql.types._\n\u001b[1m\u001b[34mesquema\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.types.StructType\u001b[0m \u003d StructType(StructField(Index,IntegerType,true),StructField(Organization Id,StringType,true),StructField(Name,StringType,true),StructField(Website,StringType,true),StructField(Country,StringType,true),StructField(Description,StringType,true),StructField(Founded,IntegerType,true),StructField(Industry,StringType,true),StructField(Number of employees,IntegerType,true))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781052908738_1134175514",
+      "id": "paragraph_1781052908738_1134175514",
+      "dateCreated": "2026-06-10 00:55:08.738",
+      "dateStarted": "2026-06-10 00:59:43.043",
+      "dateFinished": "2026-06-10 00:59:43.312",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n# Cargar el archivo CSV propio con su esquema",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:00:46.419",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eCargar el archivo CSV propio con su esquema\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053218525_1958466625",
+      "id": "paragraph_1781053218525_1958466625",
+      "dateCreated": "2026-06-10 01:00:18.525",
+      "dateStarted": "2026-06-10 01:00:46.410",
+      "dateFinished": "2026-06-10 01:00:46.430",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\n\nval data2 \u003d spark.read\n  .option(\"header\", \"true\")\n  .option(\"delimiter\", \",\")\n  .option(\"quote\", \"\\\"\")\n  .schema(esquema)\n  .csv(\"/workspaces/codespaces-blank/paa-aa26/organizations-1000.csv\")",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:01:59.932",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdata2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [Index: int, Organization Id: string ... 7 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053183041_1455097120",
+      "id": "paragraph_1781053183041_1455097120",
+      "dateCreated": "2026-06-10 00:59:43.041",
+      "dateStarted": "2026-06-10 01:01:59.935",
+      "dateFinished": "2026-06-10 01:02:00.163",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n# Imprimir el esquema",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:01:18.210",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eImprimir el esquema\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053252116_649214119",
+      "id": "paragraph_1781053252116_649214119",
+      "dateCreated": "2026-06-10 01:00:52.116",
+      "dateStarted": "2026-06-10 01:01:18.197",
+      "dateFinished": "2026-06-10 01:01:18.213",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\n\ndata2.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:02:02.857",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Index: integer (nullable \u003d true)\n |-- Organization Id: string (nullable \u003d true)\n |-- Name: string (nullable \u003d true)\n |-- Website: string (nullable \u003d true)\n |-- Country: string (nullable \u003d true)\n |-- Description: string (nullable \u003d true)\n |-- Founded: integer (nullable \u003d true)\n |-- Industry: string (nullable \u003d true)\n |-- Number of employees: integer (nullable \u003d true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053278195_1386154676",
+      "id": "paragraph_1781053278195_1386154676",
+      "dateCreated": "2026-06-10 01:01:18.195",
+      "dateStarted": "2026-06-10 01:02:02.862",
+      "dateFinished": "2026-06-10 01:02:03.077",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n# Imprimir el esquema\n",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:02:41.689",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eImprimir el esquema\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053281479_425577492",
+      "id": "paragraph_1781053281479_425577492",
+      "dateCreated": "2026-06-10 01:01:21.479",
+      "dateStarted": "2026-06-10 01:02:41.692",
+      "dateFinished": "2026-06-10 01:02:41.712",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\n\ndata2.schema.foreach(println)",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:03:10.872",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "StructField(Index,IntegerType,true)\nStructField(Organization Id,StringType,true)\nStructField(Name,StringType,true)\nStructField(Website,StringType,true)\nStructField(Country,StringType,true)\nStructField(Description,StringType,true)\nStructField(Founded,IntegerType,true)\nStructField(Industry,StringType,true)\nStructField(Number of employees,IntegerType,true)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053361686_1237310366",
+      "id": "paragraph_1781053361686_1237310366",
+      "dateCreated": "2026-06-10 01:02:41.686",
+      "dateStarted": "2026-06-10 01:03:10.875",
+      "dateFinished": "2026-06-10 01:03:11.029",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n# Definir un esquema DDL",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:07:18.050",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eDefinir un esquema DDL\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053373629_2071011083",
+      "id": "paragraph_1781053373629_2071011083",
+      "dateCreated": "2026-06-10 01:02:53.629",
+      "dateStarted": "2026-06-10 01:07:18.051",
+      "dateFinished": "2026-06-10 01:07:18.073",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\n\nval esquemaDDL \u003d\n\"\"\"\nIndex INT,\n`Organization Id` STRING,\nName STRING,\nWebsite STRING,\nCountry STRING,\nDescription STRING,\nFounded INT,\nIndustry STRING,\n`Number of employees` INT\n\"\"\"",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:07:24.610",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mesquemaDDL\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m \u003d\n\"\nIndex INT,\n`Organization Id` STRING,\nName STRING,\nWebsite STRING,\nCountry STRING,\nDescription STRING,\nFounded INT,\nIndustry STRING,\n`Number of employees` INT\n\"\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053638048_1083993319",
+      "id": "paragraph_1781053638048_1083993319",
+      "dateCreated": "2026-06-10 01:07:18.048",
+      "dateStarted": "2026-06-10 01:07:24.615",
+      "dateFinished": "2026-06-10 01:07:24.833",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n# Cargar el CSV con su esquema",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:07:50.993",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eCargar el CSV con su esquema\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053644612_880549516",
+      "id": "paragraph_1781053644612_880549516",
+      "dateCreated": "2026-06-10 01:07:24.612",
+      "dateStarted": "2026-06-10 01:07:50.998",
+      "dateFinished": "2026-06-10 01:07:51.010",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\n\nval dataDDL \u003d spark.read\n  .option(\"header\", \"true\")\n  .option(\"delimiter\", \",\")\n  .option(\"quote\", \"\\\"\")\n  .schema(esquemaDDL)\n  .csv(\"/workspaces/codespaces-blank/paa-aa26/organizations-1000.csv\")\n\ndataDDL.show(10, false)",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:09:04.323",
+      "progress": 100,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-----+---------------+---------------------------+------------------------------+------------------------+--------------------------------------------+-------+-------------------------------+-------------------+\n|Index|Organization Id|Name                       |Website                       |Country                 |Description                                 |Founded|Industry                       |Number of employees|\n+-----+---------------+---------------------------+------------------------------+------------------------+--------------------------------------------+-------+-------------------------------+-------------------+\n|1    |E84A904909dF528|Liu-Hoover                 |http://www.day-hartman.org/   |Western Sahara          |Ergonomic zero administration knowledge user|1980   |Online Publishing              |6852               |\n|2    |AAC4f9aBF86EAeF|Orr-Armstrong              |https://www.chapman.net/      |Algeria                 |Ergonomic radical budgetary management      |1970   |Import / Export                |7994               |\n|3    |ad2eb3C8C24DB87|Gill-Lamb                  |http://lin.com/               |Cote d\u0027Ivoire           |Programmable intermediate conglomeration    |2005   |Apparel / Fashion              |5105               |\n|4    |D76BB12E5eE165B|Bauer-Weiss                |https://gillespie-stout.com/  |United States of America|Synergistic maximized definition            |2015   |Dairy                          |9069               |\n|5    |2F31EddF2Db9aAE|Love-Palmer                |https://kramer.com/           |Denmark                 |Optimized optimizing moderator              |2010   |Management Consulting          |6991               |\n|6    |6774DC1dB00BD11|Farmer, Edwards and Andrade|http://wolfe-boyd.com/        |Norfolk Island          |Virtual leadingedge benchmark               |2003   |Mental Health Care             |3503               |\n|7    |116B5cD4eE1fAAc|Bass, Hester and Mcclain   |https://meza-smith.com/       |Uzbekistan              |Multi-tiered system-worthy hub              |1994   |Computer Hardware              |2762               |\n|8    |AB2eA15d98b6BD4|Strickland, Gray and Jensen|http://kerr.info/             |Israel                  |Team-oriented fresh-thinking knowledge user |1987   |Performing Arts                |7020               |\n|9    |0c6D831e8DceCfE|Sparks, Decker and Powell  |https://www.howe.net/         |Israel                  |Down-sized content-based info-mediaries     |1977   |Marketing / Advertising / Sales|2709               |\n|10   |9ABE0c8aee135d6|Osborn, Ford and Macdonald |http://www.mcdonald-watts.biz/|Syrian Arab Republic    |Optional coherent focus group               |1990   |Investment Banking / Venture   |5731               |\n+-----+---------------+---------------------------+------------------------------+------------------------+--------------------------------------------+-------+-------------------------------+-------------------+\nonly showing top 10 rows\n\n\u001b[1m\u001b[34mdataDDL\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m \u003d [Index: int, Organization Id: string ... 7 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://ca6d50e3-15ef-4fdc-a26e-8343b66eafad.internal.cloudapp.net:4040/jobs/job?id\u003d40"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053670991_1531246711",
+      "id": "paragraph_1781053670991_1531246711",
+      "dateCreated": "2026-06-10 01:07:50.991",
+      "dateStarted": "2026-06-10 01:09:04.325",
+      "dateFinished": "2026-06-10 01:09:04.880",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n# Imprimir el esquema DDL",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:10:08.449",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eImprimir el esquema DDL\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053744327_223631943",
+      "id": "paragraph_1781053744327_223631943",
+      "dateCreated": "2026-06-10 01:09:04.327",
+      "dateStarted": "2026-06-10 01:10:08.445",
+      "dateFinished": "2026-06-10 01:10:08.462",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\n\ndataDDL.printSchema()",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:11:00.532",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionSupport": true,
+          "completionKey": "TAB"
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- Index: integer (nullable \u003d true)\n |-- Organization Id: string (nullable \u003d true)\n |-- Name: string (nullable \u003d true)\n |-- Website: string (nullable \u003d true)\n |-- Country: string (nullable \u003d true)\n |-- Description: string (nullable \u003d true)\n |-- Founded: integer (nullable \u003d true)\n |-- Industry: string (nullable \u003d true)\n |-- Number of employees: integer (nullable \u003d true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053808445_1253538588",
+      "id": "paragraph_1781053808445_1253538588",
+      "dateCreated": "2026-06-10 01:10:08.445",
+      "dateStarted": "2026-06-10 01:11:00.534",
+      "dateFinished": "2026-06-10 01:11:00.777",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%md\n# Imprimir esquema",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:19:38.126",
+      "progress": 0,
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true,
+          "completionKey": "TAB",
+          "completionSupport": false
+        },
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "editorHide": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eImprimir esquema\u003c/h1\u003e\n\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053961664_705724089",
+      "id": "paragraph_1781053961664_705724089",
+      "dateCreated": "2026-06-10 01:12:41.664",
+      "dateStarted": "2026-06-10 01:19:38.129",
+      "dateFinished": "2026-06-10 01:19:38.144",
+      "status": "FINISHED"
+    },
+    {
+      "text": "%spark\n\ndataDDL.describe().show()",
+      "user": "anonymous",
+      "dateUpdated": "2026-06-10 01:19:14.945",
+      "progress": 0,
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "results": {},
+        "enabled": true,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+-----------------+---------------+--------------------+--------------------+-----------+--------------------+----------------+-----------------+-------------------+\n|summary|            Index|Organization Id|                Name|             Website|    Country|         Description|         Founded|         Industry|Number of employees|\n+-------+-----------------+---------------+--------------------+--------------------+-----------+--------------------+----------------+-----------------+-------------------+\n|  count|             1000|           1000|                1000|                1000|       1000|                1000|            1000|             1000|               1000|\n|   mean|            500.5|           NULL|                NULL|                NULL|       NULL|                NULL|        1995.852|             NULL|           4964.996|\n| stddev|288.8194360957494|           NULL|                NULL|                NULL|       NULL|                NULL|15.0960255029589|             NULL| 2812.7890347728076|\n|    min|                1|0052ABdaff57DaC|       Abbott-Arroyo|http://abbott-bri...|Afghanistan|Adaptive dynamic ...|            1970|       Accounting|                  1|\n|    max|             1000|fff54EBcb7F443b|Zhang, Sosa and A...|  https://yates.com/|   Zimbabwe|Visionary transit...|            2022|Writing / Editing|               9952|\n+-------+-----------------+---------------+--------------------+--------------------+-----------+--------------------+----------------+-----------------+-------------------+\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://ca6d50e3-15ef-4fdc-a26e-8343b66eafad.internal.cloudapp.net:4040/jobs/job?id\u003d41"
+            },
+            {
+              "jobUrl": "http://ca6d50e3-15ef-4fdc-a26e-8343b66eafad.internal.cloudapp.net:4040/jobs/job?id\u003d42"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1781053860535_1283286767",
+      "id": "paragraph_1781053860535_1283286767",
+      "dateCreated": "2026-06-10 01:11:00.535",
+      "dateStarted": "2026-06-10 01:19:14.948",
+      "dateFinished": "2026-06-10 01:19:18.244",
+      "status": "FINISHED"
     }
   ],
   "name": "cargaCsv",
